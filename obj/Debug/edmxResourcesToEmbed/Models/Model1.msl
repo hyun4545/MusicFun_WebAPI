@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MusicFunModelStoreContainer" CdmEntityContainer="MusicFunEntities1">
+    <EntitySetMapping Name="member">
+      <EntityTypeMapping TypeName="MusicFunModel.member">
+        <MappingFragment StoreEntitySet="member">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MusicList">
+      <EntityTypeMapping TypeName="MusicFunModel.MusicList">
+        <MappingFragment StoreEntitySet="MusicList">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="list_id" ColumnName="list_id" />
+          <ScalarProperty Name="song_id" ColumnName="song_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MusicLists">
+      <EntityTypeMapping TypeName="MusicFunModel.MusicLists">
+        <MappingFragment StoreEntitySet="MusicLists">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="list_name" ColumnName="list_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SongInfo">
+      <EntityTypeMapping TypeName="MusicFunModel.SongInfo">
+        <MappingFragment StoreEntitySet="SongInfo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="song_title" ColumnName="song_title" />
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="file_name" ColumnName="file_name" />
+          <ScalarProperty Name="add_time" ColumnName="add_time" />
+          <ScalarProperty Name="song_time" ColumnName="song_time" />
+          <ScalarProperty Name="last_time" ColumnName="last_time" />
+          <ScalarProperty Name="download_times" ColumnName="download_times" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

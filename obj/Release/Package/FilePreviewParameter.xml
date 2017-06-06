@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="WebApplication5020160822045658" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\myungjong\\Documents\\Visual\ Studio\ 2013\\Projects\\WebApplication50\\WebApplication50\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\myungjong\\Documents\\Visual\ Studio\ 2013\\Projects\\WebApplication50\\WebApplication50\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="MusicFunEntities-Web.config Connection String" description="" value="metadata=res://*/Models.Model1.csdl|res://*/Models.Model1.ssdl|res://*/Models.Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=musicfun.database.windows.net;Initial Catalog=MusicFun;Persist Security Info=True;User ID=hyun4545;Password=hyjk471212&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\myungjong\\Documents\\Visual\ Studio\ 2013\\Projects\\WebApplication50\\WebApplication50\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MusicFunEntities']/@connectionString" />
+  </parameter>
+  <parameter name="MusicFunEntities3-Web.config Connection String" description="MusicFunEntities3 應用程式在 web.config 中用來存取資料庫的連接字串。" value="metadata=res://*/Models.Model1.csdl|res://*/Models.Model1.ssdl|res://*/Models.Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=musicfun.database.windows.net;initial catalog=MusicFun;persist security info=True;user id=hyun4545;password=hyjk471212*;multipleactiveresultsets=True;application name=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\myungjong\\Documents\\Visual\ Studio\ 2013\\Projects\\WebApplication50\\WebApplication50\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MusicFunEntities3']/@connectionString" />
+  </parameter>
+</parameters>

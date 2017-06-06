@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MusicFunModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="member">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MusicList">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="list_id" Type="int" Nullable="false" />
+    <Property Name="song_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MusicLists">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="list_name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SongInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="song_title" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="author" Type="nvarchar" MaxLength="50" />
+    <Property Name="file_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="add_time" Type="datetime" Nullable="false" />
+    <Property Name="song_time" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="last_time" Type="datetime" Nullable="false" />
+    <Property Name="download_times" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="MusicFunModelStoreContainer">
+    <EntitySet Name="member" EntityType="Self.member" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MusicList" EntityType="Self.MusicList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MusicLists" EntityType="Self.MusicLists" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SongInfo" EntityType="Self.SongInfo" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
